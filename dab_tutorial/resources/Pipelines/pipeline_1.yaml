@@ -1,0 +1,15 @@
+resources:
+  pipelines:
+    pipeline_pipeline:
+      name: Pipeline
+      libraries:
+        - glob:
+            include: ../../src/Pipeline/transformations/**
+      schema: default
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: workspace
+      serverless: true
+      root_path: /Workspace/DAB_Tutorial_udemy/databricks_udemy/dab_tutorial/src/Pipeline
